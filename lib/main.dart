@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tictactoe_game/screens/create_room_screen.dart';
+import 'package:tictactoe_game/screens/game_screen.dart';
+import 'package:tictactoe_game/screens/join_room_screen.dart';
 import 'package:tictactoe_game/screens/main_menu_screen.dart';
 
 void main() {
@@ -18,6 +21,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         MainMenuScreen.routeName: (context) => MainMenuScreen(),
+        JoinRoomScreen.routeName: (context) => JoinRoomScreen(),
+        CreateRoomScreen.routeName: (context) => CreateRoomScreen(),
+        GameScreen.routeName: (context) => GameScreen(),
       },
       initialRoute: MainMenuScreen.routeName,
     );
